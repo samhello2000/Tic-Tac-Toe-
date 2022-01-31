@@ -17,15 +17,15 @@ class MainActivity : AppCompatActivity() {
 
         var cellId=0
         when(buSelected.id){
-            R.id.b1->cellId=1
-            R.id.b2->cellId=2
-            R.id.b3->cellId=3
-            R.id.b4->cellId=4
-            R.id.b5->cellId=5
-            R.id.b6->cellId=6
-            R.id.b7->cellId=7
-            R.id.b8->cellId=8
-            R.id.b9->cellId=9
+            R.id.btn1->cellId=1
+            R.id.btn2->cellId=2
+            R.id.btn3->cellId=3
+            R.id.btn4->cellId=4
+            R.id.btn5->cellId=5
+            R.id.btn6->cellId=6
+            R.id.btn7->cellId=7
+            R.id.btn8->cellId=8
+            R.id.btn9->cellId=9
         }
 //        Log.d("buClick:",buSelected.id.toString())
 //        Log.d("buClick:cellId:",cellId.toString())
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         if(activePlayer==1)
         {
             buSelected.text="X"
-            buSelected.setBackgroundResource(R.color.white)
+            buSelected.setBackgroundResource(R.color.black)
             player1.add(cellId)
             activePlayer=2
         }else
